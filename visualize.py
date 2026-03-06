@@ -34,8 +34,8 @@ def get_HV_and_SP():
     o2 = (get_objectives_from_file(path, separator=" "))
     HV = (hv.do(-np.array(o2) + 2 * ref_point))
     SP = get_SP(o2)
-    print("EMO HV:%s" % HV)
-    print("EMO SP:%s" % SP)
+    print("HV:%s" % HV)
+    print("SP:%s" % SP)
 
     draw_scatter(o2, no_dominated=True)
 
